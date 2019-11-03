@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  　<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ヨガスタジオOPEN</title>
+  <!-- <script type="text/javascript" src="js/lpjs.js"></script> -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  
+  <script>
+    $(function () {
+      $("#page-top a").click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 1000);
+        return false;
+      });
+    });
+  </script>
+  
+  <script>
+    function fncBMI() {
+      var bmi, W, h;
+      w = eval(document.bmi.bmiWeight.value);
+      h = eval(document.bmi.bmiHeight.value) / 100;
+      bmi = w / (h * h);
+      alert('あなたのBMI値は' + bmi + 'です｡');
+      document.bmi.bmiAns.value = bmi;
+    }
+  </script>
+</head>
+<body>
+  
+  <header>
+    <h1>
+      ヨガスタジオ11月3日(土)OPEN！ 月額2,500円
+    </h1>
+    <figure>  
+      <img class="sample" src="images/74fa3396f049c00fbbbbeea4979328fe_t.jpeg" alt="ヨガスタジオを始めよう">
+      <figcaption>ヨガで心と体のバランスを整えよう｡</figcaption>
+    </figure>
+    <p><a href="#cta">今すぐ申し込む</a></p>
+  </header>
+  <main>
+    <p>
+      <h2>
+        事実､<span class="yellow-futo">30代以上</span>が､ヨガをはじめています｡
+      </h2>
+      <div class="cv-contents">
+        <figure>
+          <img src="images/IVOL_STUDIO_013_TP_V4.jpg" alt="会員様の声">
+          <figcaption>カラダのバランスもアップ！</figcaption>
+        </figure>
+        <blockquote class="clearfix"><h3>
+          体質が変わった会員様の声
+        </h3>
+        肩こりがなくなりました(30代)<br>最近ぎっくり腰になりません！(40代)
+      </blockquote>
+    </div>
+    </p>
+    <p>
+      <h3>
+        期待できる効果！
+      </h3>
+      ぽっこり<big><strong>お腹</strong></big>に
+    </p>
+    <form name="bmi">
+      <p>最近体型が気になる方にはBMI値を見てみましょう！<br>
+      「BMI=体重(kg)÷身長(m)×身長(m)」</p>
+      体重:<input type="text"name="bmiWeight">kg<br>
+      身長:<input type="text"name="bmiHeight">cm
+      <input type="button"value="計算" onclick ="fncBMI()"><br>
+      結果:<input type="text"name="bmiAns">
+    </form>
+    <p id="page-top"><a href="#">TOPへ戻る</a></p>
+    <p class="kadomaru-box">他にも3つのヨガ効果</p>
+    <p><ul>
+      <li>気持ちリセット</li>
+      <li>体幹ほぐし</li>
+      <li>デトックス</li>
+    </ul></p>
+    <!-- yutubu動画-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jx-UaR6N6CU" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p id="cta"><a target="_blank" href="http://www.google.co.jp">お申し込みはこちらから</a></p>
+  </main>
+  
+  <footer>
+    <small>
+      &copy;2019 hibi-yoga-studio.
+    </small>
+  </footer>   
+</body>
+</html>
